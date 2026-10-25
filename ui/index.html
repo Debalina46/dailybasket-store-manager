@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DailyBasket | Store Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css?v=2.0">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+        <a class="brand" href="index.html"><span class="brand-mark">DB</span><span>daily<span class="brand-accent">basket</span><small>STORE MANAGER</small></span></a>
+        <div class="side-label">WORKSPACE</div>
+        <a class="side-link active" href="index.html"><span>▦</span> Dashboard</a>
+        <a class="side-link" href="manage-product.html"><span>▤</span> Products</a>
+        <a class="side-link" href="order.html"><span>＋</span> New order</a>
+        <div class="sidebar-bottom"><div class="store-avatar">🏪</div><div><b>Neighbourhood Store</b><small>Local store workspace</small></div></div>
+    </aside>
+    <main class="main-area">
+        <header class="topbar"><div><span class="eyebrow">YOUR STORE AT A GLANCE</span><h1>Dashboard</h1></div><a class="btn btn-primary btn-rounded" href="order.html">＋ Create new order</a></header>
+        <section class="welcome-banner"><div><span class="banner-tag">SIMPLE. SMART. LOCAL.</span><h2>Good business starts with<br>good organisation. <span>🌿</span></h2><p>Keep products tidy, track orders and make everyday store work easier.</p><div class="banner-actions"><a href="order.html" class="btn btn-light-green">Create an order <span>→</span></a><a href="manage-product.html" class="banner-link">Manage inventory</a></div></div><div class="banner-art" aria-hidden="true"><div class="art-circle">🛒</div><span class="floating-item item-one">🥑</span><span class="floating-item item-two">🍊</span><span class="floating-item item-three">🥬</span></div></section>
+        <section class="section-heading"><div><h2>Store overview</h2><p>A quick snapshot of your daily activity</p></div><span class="live-pill"><i></i> Connected to store data</span></section>
+        <div class="stats-grid"><article class="stat-card"><div class="stat-top"><span>Total orders</span><span class="stat-icon violet">↗</span></div><strong id="orderCount">—</strong><small>Orders recorded in the system</small></article><article class="stat-card"><div class="stat-top"><span>Products listed</span><span class="stat-icon green">▤</span></div><strong id="productCount">—</strong><small>Items in your product catalogue</small></article><article class="stat-card"><div class="stat-top"><span>Sales recorded</span><span class="stat-icon orange">₹</span></div><strong id="salesTotal">₹0.00</strong><small>Total value of saved orders</small></article></div>
+        <section class="content-card"><div class="card-heading"><div><h2>Recent orders</h2><p>Latest customer purchases</p></div><a class="text-link" href="order.html">＋ New order</a></div><div class="table-responsive"><table class="table store-table"><thead><tr><th>ORDER DATE</th><th>ORDER ID</th><th>CUSTOMER</th><th class="text-right">ORDER TOTAL</th><th class="text-right">DETAILS</th></tr></thead><tbody><tr><td colspan="5" class="empty-state">Loading store orders…</td></tr></tbody></table></div><div class="table-foot"><span>Order history from your store database</span><a href="manage-product.html">View products →</a></div></section>
+        <div class="modal fade" id="orderDetailsModal" role="dialog"><div class="modal-dialog"><div class="modal-content modern-modal"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">×</button><span class="eyebrow">ORDER SUMMARY</span><h3 class="modal-title">Order details</h3><p id="detailCustomer"></p></div><div class="modal-body"><div class="table-responsive"><table class="table store-table"><thead><tr><th>ITEM</th><th>QTY</th><th class="text-right">TOTAL</th></tr></thead><tbody id="orderDetailRows"></tbody></table></div><div class="detail-total">Order total <strong id="detailTotal">₹0.00</strong></div></div><div class="modal-footer"><button class="btn btn-default btn-rounded" data-dismiss="modal">Close</button></div></div></div></div><footer class="app-footer">DailyBasket Store Manager <span>Made for everyday local retail</span></footer>
+    </main>
+</div>
+<script src="js/packages/jquery.min.js"></script><script src="js/packages/bootstrap.min.js"></script><script src="js/custom/common.js"></script><script src="js/custom/dashboard.js"></script>
+</body></html>
